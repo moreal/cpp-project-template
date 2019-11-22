@@ -1,8 +1,11 @@
+language: cpp
+
 before_script:
   - mkdir -p build
 
 script:
-  - pushd build \
-      cmake .. \
-      make \
+  - | # build
+    pushd build
+      cmake ..
+      make
     popd
